@@ -654,23 +654,7 @@
                     codebases and grow as an engineer.
                 </p>
             </div>
-            <div class="about-facts">
-                <div class="fact">
-                    <div class="fact-label">Location</div>
-                    <div class="fact-value">Potsdam, Germany</div>
-                </div>
-                <div class="fact">
-                    <div class="fact-label">University</div>
-                    <div class="fact-value">UE University of Europe</div>
-                </div>
-                <div class="fact">
-                    <div class="fact-label">Focus</div>
-                    <div class="fact-value">Java Backend Development</div>
-                </div>
-                <div class="fact">
-                    <div class="fact-label">Available</div>
-                    <div class="fact-value">From May 2026</div>
-                </div>
+            <div class="about-facts" id="about-container"> 
             </div>
         </div>
     </section>
@@ -679,47 +663,7 @@
     <section id="skills">
         <div class="section-label reveal">// tech stack</div>
         <h2 class="section-title reveal">What I work with</h2>
-        <div class="skills-grid reveal">
-            <div class="skill-card">
-                <div class="skill-icon">☕</div>
-                <div class="skill-name">Java</div>
-                <div class="skill-detail">OOP, Streams, Collections</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🍃</div>
-                <div class="skill-name">Spring Boot</div>
-                <div class="skill-detail">REST API, Data JPA, Security</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🐘</div>
-                <div class="skill-name">PostgreSQL</div>
-                <div class="skill-detail">Relational database</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🔐</div>
-                <div class="skill-name">Spring Security</div>
-                <div class="skill-detail">JWT, Role-based access</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🧪</div>
-                <div class="skill-name">JUnit 5 + Mockito</div>
-                <div class="skill-detail">Unit testing, Mocking</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🐍</div>
-                <div class="skill-name">Python</div>
-                <div class="skill-detail">OOP, Scripting</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🗄️</div>
-                <div class="skill-name">SQL</div>
-                <div class="skill-detail">Queries, Joins, Aggregation</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">📦</div>
-                <div class="skill-name">Maven + Git</div>
-                <div class="skill-detail">Build, Dependencies, VCS</div>
-            </div>
+        <div class="skills-grid reveal" id="skills-container">
         </div>
     </section>
 
@@ -728,57 +672,7 @@
         <div class="section-label reveal">// projects</div>
         <h2 class="section-title reveal">What I've built</h2>
 
-        <div class="project-card reveal">
-            <div class="project-header">
-                <div class="project-name">TaskFlow</div>
-                <div class="project-links">
-                    <a href="https://github.com/Sirionss/taskflow" target="_blank" class="project-link">GitHub ↗</a>
-                </div>
-            </div>
-            <p class="project-desc">
-                A production-style REST API for task management. Built with layered architecture
-                (Controller -> Service -> Repository), connected to PostgreSQL through Spring Data JPA.
-                Features JWT authentication, role-based access control, and comprehensive test coverage.
-            </p>
-            <div class="project-features">
-                <span class="feature-tag">15 endpoints</span>
-                <span class="feature-tag">JWT auth</span>
-                <span class="feature-tag">Role-based access</span>
-                <span class="feature-tag">20 unit tests</span>
-                <span class="feature-tag">Custom exceptions</span>
-                <span class="feature-tag">CRUD + filtering</span>
-            </div>
-            <div class="project-tech">
-                <span class="tech-tag">Java 17</span>
-                <span class="tech-tag">Spring Boot</span>
-                <span class="tech-tag">Spring Security</span>
-                <span class="tech-tag">Spring Data JPA</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">JUnit 5</span>
-                <span class="tech-tag">Mockito</span>
-                <span class="tech-tag">Maven</span>
-            </div>
-        </div>
-
-        <div class="project-card reveal">
-            <div class="project-header">
-                <div class="project-name">Library Accounting</div>
-            </div>
-            <p class="project-desc">
-                A terminal-based library management system built with Python. 
-                Supports full CRUD operations for books and members, with an interactive 
-                multi-page CLI interface and real-time tracking of borrow/return workflows.
-            </p>
-            <div class="project-features">
-                <span class="feature-tag">OOP design</span>
-                <span class="feature-tag">8 navigation screens</span>
-                <span class="feature-tag">CRUD operations</span>
-            </div>
-            <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">OOP</span>
-                <span class="tech-tag">CLI</span>
-            </div>
+        <div id="projects-container"> 
         </div>
     </section>
 
@@ -786,25 +680,7 @@
     <section id="education">
         <div class="section-label reveal">// education</div>
         <h2 class="section-title reveal">Where I study</h2>
-        <div class="edu-timeline reveal">
-            <div class="edu-item">
-                <div class="edu-date">2023 - 2027 (expected)</div>
-                <div class="edu-title">B.Sc. Software Engineering</div>
-                <div class="edu-school">UE University of Europe for Applied Sciences, Potsdam</div>
-                <div class="edu-desc">
-                    Object-oriented programming, data structures, software design patterns, 
-                    software architecture, and database systems.
-                </div>
-            </div>
-            <div class="edu-item">
-                <div class="edu-date">Feb 2026 - Jun 2026</div>
-                <div class="edu-title">Advanced Python & Java Programming</div>
-                <div class="edu-school">VK Education (Online, Selective Program)</div>
-                <div class="edu-desc">
-                    Concurrency, advanced OOP, modern Python features, and core Java 
-                    development practices. Competitive admission with entrance assessment.
-                </div>
-            </div>
+        <div class="edu-timeline reveal" id="education-container">
         </div>
     </section>
 
@@ -812,44 +688,127 @@
     <section id="contact">
         <div class="section-label reveal">// contact</div>
         <h2 class="section-title reveal">Get in touch</h2>
-        <div class="contact-grid reveal">
-            <a href="mailto:damiangrishko@gmail.com" class="contact-card">
-                <div class="contact-icon">✉️</div>
-                <div class="contact-info">
-                    <div class="contact-label">Email</div>
-                    <div class="contact-value">damiangrishko@gmail.com</div>
-                </div>
-            </a>
-            <a href="https://github.com/Sirionss" target="_blank" class="contact-card">
-                <div class="contact-icon">💻</div>
-                <div class="contact-info">
-                    <div class="contact-label">GitHub</div>
-                    <div class="contact-value">Sirionss</div>
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/in/damian-grishko" target="_blank" class="contact-card">
-                <div class="contact-icon">💼</div>
-                <div class="contact-info">
-                    <div class="contact-label">LinkedIn</div>
-                    <div class="contact-value">damian-grishko</div>
-                </div>
-            </a>
-            <a href="https://leetcode.com/u/Sirions/" target="_blank" class="contact-card">
-                <div class="contact-icon">🧩</div>
-                <div class="contact-info">
-                    <div class="contact-label">LeetCode</div>
-                    <div class="contact-value">Sirions</div>
-                </div>
-            </a>
-        </div>
+        <div class="contact-grid reveal" id="contact-container"></div>
     </section>
 
     <footer>
-        built by damian grishko · 2026
+        built by damian grishko 2026
     </footer>
 
     <script>
-        // Scroll reveal
+        const API_URL = "https://portfolio-cms-production-2d01.up.railway.app";
+        async function fetchAPI(endpoint) {
+            try {
+                const res = await fetch(`${API_URL}${endpoint}`);
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                return await res.json();
+            } catch (err) {
+                console.error(`Failed to fetch ${endpoint}:`, err);
+                return null;
+            }
+        }
+
+        async function loadSkills() {
+            const skills = await fetchAPI("/api/skills");
+            const container = document.getElementById("skills-container");
+    
+            if (!skills || skills.length === 0) {
+                container.innerHTML = "<p style='color: var(--text-muted)'>Loading skills...</p>";
+                return;
+            }
+    
+            container.innerHTML = skills.map(skill => `
+                <div class="skill-card">
+                    <div class="skill-icon">${skill.icon}</div>
+                    <div class="skill-name">${skill.name}</div>
+                    <div class="skill-detail">${skill.detail}</div>
+                </div>
+            `).join("");
+        }
+
+        async function loadAbout() {
+            const about = await fetchAPI("/api/about");
+            const container = document.getElementById("about-container");
+
+            if (!about || about.length === 0) return;
+    
+            const data = about[0]; 
+    
+            container.innerHTML = `
+                <div class="fact">
+                    <div class="fact-label">Location</div>
+                    <div class="fact-value">${data.location}</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-label">University</div>
+                    <div class="fact-value">${data.university}</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-label">Focus</div>
+                    <div class="fact-value">${data.title}</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-label">Available</div>
+                    <div class="fact-value">${data.availability}</div>
+                </div>
+            `;
+        }
+
+        async function loadProjects() {
+            const projects = await fetchAPI("/api/projects");
+            const container = document.getElementById("projects-container");
+    
+            if (!projects || projects.length === 0) return;
+    
+            container.innerHTML = projects.map(p => `
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-name">${p.name}</div>
+                        <div class="project-links">
+                            ${p.githubUrl ? `<a href="${p.githubUrl}" target="_blank" class="project-link">GitHub ↗</a>` : ""}
+                        </div>
+                    </div>
+                    <p class="project-desc">${p.description}</p>
+                    <div class="project-features">
+                        ${(p.features || []).map(f => `<span class="feature-tag">${f}</span>`).join("")}
+                    </div>
+                    <div class="project-tech">
+                        ${(p.technologies || []).map(t => `<span class="tech-tag">${t}</span>`).join("")}
+                    </div>
+                </div>
+            `).join("");
+        }
+        async function loadEducation() {
+            const educations = await fetchAPI("/api/education");
+            const container = document.getElementById("education-container");
+    
+            if (!educations || educations.length === 0) return;
+    
+            container.innerHTML = educations.map(e => `
+                <div class="edu-item">
+                    <div class="edu-date">${e.dateRange}</div>
+                    <div class="edu-title">${e.title}</div>
+                    <div class="edu-school">${e.school}</div>
+                    <div class="edu-desc">${e.description}</div>
+                </div>
+            `).join("");
+        }
+        async function loadContacts() {
+            const contacts = await fetchAPI("/api/contact-links");
+            const container = document.getElementById("contact-container");
+            
+            if (!contacts || contacts.length === 0) return;
+            
+            container.innerHTML = contacts.map(c => `
+                <a href="${c.url}" target="_blank" class="contact-card">
+                    <div class="contact-icon">${c.icon}</div>
+                    <div class="contact-info">
+                        <div class="contact-label">${c.label}</div>
+                        <div class="contact-value">${c.url.replace(/^https?:\/\/(www\.)?/, "")}</div>
+                    </div>
+                </a>
+            `).join("");
+        }
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -859,10 +818,17 @@
         }, { threshold: 0.1 });
 
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-        // Smooth nav highlight
+ 
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-links a');
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            loadAbout();
+            loadSkills();
+            loadProjects();
+            loadEducation();
+            loadContacts();
+        });
 
         window.addEventListener('scroll', () => {
             let current = '';
