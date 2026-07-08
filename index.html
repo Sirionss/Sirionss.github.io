@@ -794,7 +794,7 @@
             `).join("");
         }
         async function loadContacts() {
-            const contacts = await fetchAPI("/api/contact-links");
+            const contacts = await fetchAPI("/api/contacts");
             const container = document.getElementById("contact-container");
             
             if (!contacts || contacts.length === 0) return;
