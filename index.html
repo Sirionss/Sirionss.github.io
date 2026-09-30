@@ -640,21 +640,7 @@
         <div class="section-label reveal">// about</div>
         <h2 class="section-title reveal">Who I am</h2>
         <div class="about-content reveal">
-            <div class="about-text">
-                <p>
-                    Final Year Software Engineering student at the
-                    University of Europe for Applied Sciences, 
-                    focused on backend development with Java and Spring Boot. 
-                    I have built and deployed two REST APIs (TaskFlow and this Portfolio CMS)
-                    with JWT security and unit test coverage.
-                </p>
-                <p>
-                    Right now looking for Internship or Working Student
-                    (available full-time until March 2027, part-time after)
-                    where I can contribute to production code and grow
-                    alongside an experienced team.
-                </p>
-            </div>
+            <div class="about-text" id="about-text-container"></div>
             <div class="about-facts" id="about-container"> 
             </div>
         </div>
@@ -730,11 +716,12 @@
         async function loadAbout() {
             const about = await fetchAPI("/api/about");
             const container = document.getElementById("about-container");
-
+            const textcontainer = document.getElementById("about-text-container")
             if (!about || about.length === 0) return;
-    
+            
             const data = about[0]; 
-    
+
+            textcontainer.innerHTML = '<p>${data.description}</p>';
             container.innerHTML = `
                 <div class="fact">
                     <div class="fact-label">Location</div>
